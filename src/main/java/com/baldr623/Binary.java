@@ -19,15 +19,15 @@ public class Binary {
 		//Loop will run until num == 0
 		while(num > 0 ) {
 			
-			//Checks modulus of num and if there is no remainder puts a zero in place 
-			//Then concatenates the previous value to a "0"
+			//Checks modulus of num divided by 2 and if there is no remainder puts a zero in place 
+			//Then concatenates the previous value to the "0"
 			//Then halves the value of num
 			if(num % 2 == 0) {
 				bin = "0".concat(bin);
 				num /= 2;
 				
-			//Checks modulus of num and if there is a remainder puts a one in place 
-			//Then concatenates the previous value to a "1"
+			//Else there is a remainder and puts a one in place 
+			//Then concatenates the previous value to the "1"
 			//Then halves the value of (num - 1)
 			} else {
 				bin = "1".concat(bin);
